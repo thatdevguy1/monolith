@@ -81,15 +81,15 @@ document.addEventListener('DOMContentLoaded', function(){
     })
 
     function displayStyle(name = style.name, size = style.size, model = style.model){ 
-        var linkRoute = `./assets/${model}/${size}${name}.jpg`;
+        var linkRoute = `./assets/${model}/${size}-${name}.jpg`;
 
         if(name != style.name || size != style.size){
-            document.querySelector("#topModel").src = `./assets/top/${size}${name}.jpg`;
-            document.querySelector("#sideModel").src = `./monolithImg/sideTilt/${size}${name}.jpg`;
-            document.querySelector("#frontModel").src = `./monolithImg/frontTilt/${size}${name}.jpg`;
-            document.querySelector("#slantedModel").src = `./monolithImg/slanted${size}${name}.jpg`;
-            document.querySelector("#cornerModel").src = `./monolithImg/corner/${size}${name}.jpg`;
-            document.querySelector("#packageModel").src = `./monolithImg/package/${size}${name}.jpg`;
+            document.querySelector("#topModel").src = `./assets/top/${size}-${name}.jpg`;
+            document.querySelector("#sideModel").src = `./monolithImg/sideTilt/${size}-${name}.jpg`;
+            document.querySelector("#frontModel").src = `./monolithImg/frontTilt/${size}-${name}.jpg`;
+            document.querySelector("#slantedModel").src = `./monolithImg/slanted${size}-${name}.jpg`;
+            document.querySelector("#cornerModel").src = `./monolithImg/corner/${size}-${name}.jpg`;
+            document.querySelector("#packageModel").src = `./monolithImg/package/${size}-${name}.jpg`;
         }
 
         document.querySelector(".preview").src = linkRoute;
