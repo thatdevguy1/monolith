@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     var style = {
         name: "athera",
-        size: "330",
+        size: "m330",
         model: "top"
     };
 
@@ -67,30 +67,31 @@ document.addEventListener('DOMContentLoaded', function(){
      
     sizeSelect.addEventListener("change", function(ele){
         style.size = ele.target.value;
-        displayStyle(...style);
+        displayStyle(style);
     })
 
     mpStyle.addEventListener('click', function(ele){
         style.name = ele.target.getAttribute("data-style");
-        displayStyle(...style);
+        displayStyle(style);
     });
 
     previewModel.addEventListener('click', function(ele){
         style.model = ele.target.getAttribute("data-model");
-        displayStyle(...style);
+        displayStyle(style);
     })
 
-    function displayStyle(name = style.name, size = style.size, model = style.model){ 
+    function displayStyle({name = style.name, size = style.size, model = style.model}){ 
         var linkRoute = `./assets/${model}/${size}-${name}.jpg`;
+        console.log(linkRoute);
 
-        if(name != style.name || size != style.size){
+        //if(name != style.name || size != style.size){
             document.querySelector("#topModel").src = `./assets/top/${size}-${name}.jpg`;
             document.querySelector("#sideModel").src = `./assets/sideTilt/${size}-${name}.jpg`;
             document.querySelector("#frontModel").src = `./assets/frontTilt/${size}-${name}.jpg`;
             document.querySelector("#slantedModel").src = `./assets/slanted${size}-${name}.jpg`;
             document.querySelector("#cornerModel").src = `./assets/corner/${size}-${name}.jpg`;
             document.querySelector("#packageModel").src = `./assets/package/${size}-${name}.jpg`;
-        }
+       // }
 
         document.querySelector(".preview").src = linkRoute;
 
