@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
 
     var style = {
-        name: "athera",
+        name: "aethera",
         size: "m330",
         model: "top"
     };
