@@ -85,11 +85,11 @@ document.addEventListener('DOMContentLoaded', function(){
 
         if(name != style.name || size != style.size){
             document.querySelector("#topModel").src = `./assets/top/${size}-${name}.jpg`;
-            document.querySelector("#sideModel").src = `./monolithImg/sideTilt/${size}-${name}.jpg`;
-            document.querySelector("#frontModel").src = `./monolithImg/frontTilt/${size}-${name}.jpg`;
-            document.querySelector("#slantedModel").src = `./monolithImg/slanted${size}-${name}.jpg`;
-            document.querySelector("#cornerModel").src = `./monolithImg/corner/${size}-${name}.jpg`;
-            document.querySelector("#packageModel").src = `./monolithImg/package/${size}-${name}.jpg`;
+            document.querySelector("#sideModel").src = `./assets/sideTilt/${size}-${name}.jpg`;
+            document.querySelector("#frontModel").src = `./assets/frontTilt/${size}-${name}.jpg`;
+            document.querySelector("#slantedModel").src = `./assets/slanted${size}-${name}.jpg`;
+            document.querySelector("#cornerModel").src = `./assets/corner/${size}-${name}.jpg`;
+            document.querySelector("#packageModel").src = `./assets/package/${size}-${name}.jpg`;
         }
 
         document.querySelector(".preview").src = linkRoute;
