@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function(){
             }, 200);
         }
 
-        displayStyle();
+        displayStyle(style);
     });   
      
     sizeSelect.addEventListener("change", function(ele){
@@ -76,33 +76,31 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
     previewModel.addEventListener('click', function(ele){
-        style.model = ele.target.getAttribute("data-model");
+        console.log(ele.target.getAttribute("data-model"))
+        if(!(ele.target.getAttribute("data-model") == "undefined")){
+            style.model = ele.target.getAttribute("data-model");
+        }
         displayStyle(style);
     })
 
 
     //build a string based on the style object that will navigate to the right image folder / file 
     //to be displayed in the right elements
-    function displayStyle({name = style.name, size = style.size, model = style.model}){ 
-        var linkRoute = `./assets/${model}/${size}-${name}.jpg`;
+    function displayStyle({name, size, model}){ 
+        var linkRoute; 
+        model == 'corner' || model == 'frontTilt' ? linkRoute = `./assets/${model}/${name}.jpg` : linkRoute = `./assets/${model}/${size}-${name}.jpg`;
         console.log(linkRoute);
 
         
         document.querySelector("#topModel").src = `./assets/top/${size}-${name}.jpg`;
         document.querySelector("#sideModel").src = `./assets/sideTilt/${size}-${name}.jpg`;
-        document.querySelector("#frontModel").src = `./assets/frontTilt/${size}-${name}.jpg`;
+        document.querySelector("#frontModel").src = `./assets/frontTilt/${name}.jpg`;
         document.querySelector("#slantedModel").src = `./assets/slanted/${size}-${name}.jpg`;
-        document.querySelector("#cornerModel").src = `./assets/corner/${size}-${name}.jpg`;
+        document.querySelector("#cornerModel").src = `./assets/corner/${name}.jpg`;
         document.querySelector("#packageModel").src = `./assets/package/${size}-${name}.jpg`;
         
 
         document.querySelector(".preview").src = linkRoute;
-
-        style = {
-            name: name,
-            size: size,
-            model: model
-        };
 
     };
  }, false);

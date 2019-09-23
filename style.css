@@ -71,7 +71,7 @@
 .hero{
     width: 100vw;
     height: 85vh;
-    background-image: url("monolithImg/TOP/M508\ AETHERA\ -\ TOP.jpg");
+    background-image: url("assets/top/m508-aethera.jpg");
     background-size: 120%;
     background-position: center;
     font: white;
@@ -138,7 +138,7 @@ background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(9,121,87,1) 0%, rgba
 
 .infoImg{
     position: relative;
-    background-image: url('monolithImg/TOP/M508\ NIGHTSCHOOL\ -\ TOP.jpg');
+    background-image: url('assets/top/m508-redShift.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: 120%;
@@ -165,7 +165,7 @@ background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(9,121,87,1) 0%, rgba
 } */
 
 #stitchImg{
-    background-image: url('monolithImg/MISC/SMOKESCREEN\ -\ CLOSE\ UP.jpg');
+    background-image: url('assets/corner/smokeScreen.jpg');
     background-position: 100% 93%;
     background-repeat: no-repeat;
     background-size: 120%;
@@ -181,7 +181,7 @@ background: linear-gradient(152deg, rgba(2,0,36,1) 0%, rgba(9,121,87,1) 0%, rgba
 }
 
 #gripImgWrap{
-    background-image: url('monolithImg/MISC/GRIP\ -\ CLOSE\ UP.jpg');
+    background-image: url('assets/corner/grip.jpg');
     background-position: -10% 90%;
     background-repeat: no-repeat;
     background-size: 120%;
