@@ -10,12 +10,12 @@
 </head>
 <body>
     <div class="container">
-        <nav class="header">
+        <!-- <nav class="header">
             <img class="logo" src="./assets/general/logo.png" />
             <div id="linkWrap">
 
             </div>
-        </nav>
+        </nav> -->
         <div class="modal">
             <div class="styleContainer">
                 <img src="./assets/top/m330-aethera.jpg" alt="Aethera" data-style="aethera" class="mpStyle">
@@ -44,11 +44,18 @@
                 </div>
                 <div class="btnSelectWrap">
                     <div class="selectWrap">
-                        <h3>Size</h3>
+                        <!-- <h3>Size</h3>
                         <select name="" id="" class="sizeSelect">
                             <option value="m330">M330 (Normal)</option>
                             <option value="m508">M508 (Large)</option>
-                        </select>
+                        </select> -->
+
+                        <div class="toggle sizeSelect">
+                            <input type="radio" name="sizeBy" value="m330" id="sizeWeight" checked="checked" />
+                            <label for="sizeWeight">M330 (Regular)</label>
+                            <input type="radio" name="sizeBy" value="m508" id="sizeDimensions" />
+                            <label for="sizeDimensions">M508 (Large)</label>
+                        </div>
                     </div>
                     <button class="buyBtn">Buy</button>
                 </div>
@@ -60,6 +67,7 @@
         </div>
         <div class="hero">
             <div class="centerWrap">
+                <img class="logo" src="./assets/general/logo.png" />
                 <span class="title">WE BRING</span>
                 <span class="title">A NEW STANDARD</span>
                 <span class="title">TO MOUSEPADS</span>
