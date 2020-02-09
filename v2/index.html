@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="./assets/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script type = "text/javascript" src = "https://code.jquery.com/jquery-2.1.1.min.js"></script>           
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <title>Monolith Gaming</title>
+
+</head>
+<body>
+    <div id="container">
+        <div id="header" class="shadow">
+            <div id="logo"></div>
+            <h1 id="name">Monolith Gaming</h1>
+        </div>
+        <div id="blurb-section" class="shadow">
+
+        </div>
+        <div id="size-section">
+            <div class="size-section-cb shadow">
+                <h1>M330</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id inventore numquam minima debitis nulla! Reiciendis recusandae numquam beatae quas esse.</p>
+            </div>
+            <div class="size-section-cb shadow">
+                <h1>M508</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos eveniet molestiae sed nobis labore? Error unde consectetur quisquam ipsum blanditiis.</p>
+            </div>
+        </div>
+        <div id="mousepad-section" class="">
+            <div class="tile shadow">
+                <div class="image-holder">
+                    <img src="./assets/images/top/m508-aethera.jpg" alt="">
+                </div>
+                <div class="item-info">
+                <h4>NameHere</h4>
+                <span>$20 USD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+                </div>
+            </div>
+            <div class="tile shadow">
+                <div class="image-holder">
+                    <img src="./assets/images/top/m508-classic.jpg" alt="">
+                </div>
+                <div class="item-info">
+                <h4>NameHere</h4>
+                <span>$20 USD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+                </div>
+            </div>
+            <div class="tile shadow">
+                <div class="image-holder">
+                    <img src="./assets/images/top/m508-clova.jpg" alt="">
+                </div>
+                <div class="item-info">
+                <h4>NameHere</h4>
+                <span>$20 USD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+                </div>
+            </div>
+            <div class="tile shadow">
+                <div class="image-holder">
+                    <img src="./assets/images/top/m508-nightSchool.jpg" alt="">
+                </div>
+                <div class="item-info">
+                <h4>NameHere</h4>
+                <span>$20 USD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+                </div>
+            </div>
+            <div class="tile shadow">
+                <div class="image-holder">
+                    <img src="./assets/images/top/m508-redShift.jpg" alt="">
+                </div>
+                <div class="item-info">
+                <h4>NameHere</h4>
+                <span>$20 USD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+                </div>
+            </div>
+            <div class="tile shadow">
+                <div class="image-holder">
+                    <img src="./assets/images/top/m508-slime.jpg" alt="">
+                </div>
+                <div class="item-info">
+                <h4>NameHere</h4>
+                <span>$20 USD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>   
+                </div>
+            </div>
+            <div class="tile shadow">
+                <div class="image-holder">
+                    <img src="./assets/images/top/m508-smokeScreen.jpg" alt="">
+                </div>
+                <div class="item-info">
+                <h4>NameHere</h4>
+                <span>$20 USD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>    
+                </div>
+            </div>
+            <div class="tile shadow">
+                <div class="image-holder">
+                    <img src="./assets/images/top/m508-summerSchool.jpg" alt="">
+                </div>
+                <div class="item-info">
+                <h4>NameHere</h4>
+                <span>$20 USD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>   
+                </div>
+            </div>
+            <div class="tile" shadow>
+                <div class="image-holder">
+                    <img src="./assets/images/top/m508-wakeupCall.jpg" alt="">
+                </div>
+                <div class="item-info">
+                <h4>NameHere</h4>
+                <span>$20 USD</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>   
+                </div>
+            </div>
+        </div>
+        <div id="insta-carousel-section">
+            <div class="carousel shadow" id="demo-carousel">
+                <a class="carousel-item" href="#one!"><img src="https://images-na.ssl-images-amazon.com/images/I/61+dAlD5Y8L.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="https://images-na.ssl-images-amazon.com/images/I/61PRclZHPoL.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="https://images-na.ssl-images-amazon.com/images/I/41h82ylmkkL._SL1600_.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="https://images-na.ssl-images-amazon.com/images/I/71qCqpobieL.jpg"></a>
+            </div>    
+        </div>
+        <div id="footer">
+
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function(){
+            $('#demo-carousel').carousel();
+            autoplay();
+            function autoplay() {
+             $('.carousel').carousel('next');
+             setTimeout(autoplay, 4500);
+            }
+            });
+    </script>
+</body>
+</html>
